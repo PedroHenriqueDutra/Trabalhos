@@ -7,12 +7,17 @@ body{
     
 }
 #corpo{
-    background-color: crimson;
+    background-color: rgb(243, 213, 174);
 }
 .texto{
     text-align: justify;
     padding-left: 4%;
     padding-right: 4%;
+    border-style: solid;
+}
+.texto p{
+    display: flex;/* Faz o texto poder dividir espaço com uma imagem*/
+    margin: 2px;
 }
 
 #rodape{
