@@ -9,6 +9,10 @@ body{
 #corpo{
     background-color: crimson;
 }
+.texto{
+    text-align: justify;
+    
+}
 
 #rodape{
     background-color: goldenrod;
