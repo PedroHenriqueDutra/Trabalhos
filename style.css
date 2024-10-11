@@ -18,8 +18,11 @@ body{
 .texto p{
     display: flex;/* Faz o texto poder dividir espaço com uma imagem*/
     margin: 2px;
+    padding-bottom: 4%;
 }
-
+p img{
+    width: 75%;
+}
 #rodape{
     background-color: goldenrod;
 }
