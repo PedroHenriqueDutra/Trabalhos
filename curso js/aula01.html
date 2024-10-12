@@ -18,13 +18,17 @@
 </head>
 <body>
     <p>Hello World</p>
-    <div id="tst" onmouseenter="mouse_dentro()">
+    <div id="tst" onmouseenter="mouse_dentro()" onmouseleave="mouse_fora()">
         sdvsdv
     </div>
     <div class="ex06" onclick="click_div()">
        opendsfdfdsfsddw
        sdfsdfd
        
+    </div>
+    <br>
+    <div class="ex06" id="teste00">
+        teste00
     </div>
     <script>
         var variavel1 = null
@@ -51,6 +55,13 @@
         var test = document.querySelector('div#tst')//id = # class = . pega o elemento
         test.style.background = 'red'   
 
+        var elemento_query1 = document.querySelector('#teste00')
+        elemento_query1.addEventListener('click', mudanca_click)
+        elemento_query1.addEventListener('mouseenter', mudanca_entra)
+        elemento_query1.addEventListener('mouseout', mudanca_sai)
+        function mudanca_click(){
+            elemento_query1.style.background = "blue"
+        }
         function click_div(){
             var elemento_div = document.getElementsByClassName('ex06')[0]
             elemento_div.innerText = "black"
@@ -58,6 +69,10 @@
         function mouse_dentro(){
             var elemento_query = document.querySelector('#tst')
             elemento_query.innerText = 'teste01'
+        }
+        function mouse_fora(){
+            var elemento_query = document.querySelector('#tst')
+            elemento_query.innerHTML = ' dscsdcsdcsdcsd '
         }
 
     </script>
