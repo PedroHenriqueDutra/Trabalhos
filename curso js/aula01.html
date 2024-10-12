@@ -7,6 +7,9 @@
 </head>
 <body>
     <p>Hello World</p>
+    <div id="tst">
+        sdvsdv
+    </div>
     <script>
         var variavel1 = null
         window.alert("hello world!")/* aparece uma  mensagem com o texto*/
@@ -26,7 +29,11 @@
         salario = salario.toFixed(2)
         var min = salario<= 1412.00 ? true : false
         document.writeln(`<br>Seu salário é ${min} <br>`);
-
+        var p1 = document.getElementsByTagName('p')[0]//recupera os elementos pelo nome da tag  e seleciona o primeiro , pode usar tambem ById e ByClass
+        document.write(p1.innerText +'<br>')// escrevendo o texto da variavel p1 concatenado com a tag br para quebra de linha com inner html peaga a formatação incluindo as tags filhas
+        p1.style.background = 'grey'
+        var test = document.querySelector('div#tst')//id = # class = . pega o elemento
+        test.style.background = 'red'
     </script>
 </body>
 </html>
