@@ -13,9 +13,16 @@
         window.confirm("hello world!")/* aparece uma  mensagem com confirmação ou cancel o texto*/
         var retorno = Number.parseInt(window.prompt("hello world"))/* coleta os dados digitados e transforma em inteiro para converter para float  use parse Float  ou para o js escolher coloque apenas Number()*/
         //retorno.toString() ouu String(n)
-        var formatado = `Java script`// deve ser feita com crase `para funcionar
-        window.alert('Estou aprendendo ${formatado}')
+        var formatado = `Java script`
+        window.alert('Estou aprendendo ${formatado}')// deve ser feita com crase `para funcionar
         document.writeln("Escreve linhas diretamente no html <br> aceita tags <br>")
+        document.write(`Aceita place holder como ${formatado}`)
+        var  salario = 1600
+        
+        document.writeln(`<br>Seu salário é ${salario.toFixed(2)} <br>`)
+        var salario2 = salario.toLocaleString('pt-BR', { style: "currency", currency: 'BRL' });
+        document.writeln(`<br>Seu salário é ${salario2} <br>`);
+
     </script>
 </body>
 </html>
