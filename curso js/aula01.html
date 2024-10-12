@@ -22,6 +22,10 @@
         document.writeln(`<br>Seu salário é ${salario.toFixed(2)} <br>`)
         var salario2 = salario.toLocaleString('pt-BR', { style: "currency", currency: 'BRL' });
         document.writeln(`<br>Seu salário é ${salario2} <br>`);
+        //operador ternario (verificação)?(retorno caso true):(retorno caso false)
+        salario = salario.toFixed(2)
+        var min = salario<= 1412.00 ? true : false
+        document.writeln(`<br>Seu salário é ${min} <br>`);
 
     </script>
 </body>
