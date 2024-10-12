@@ -8,10 +8,18 @@
 <body>
     <p>Hello World</p>
     <script>
+        var variavel1 = null
         window.alert("hello world!")/* aparece uma  mensagem com o texto*/
         window.confirm("hello world!")/* aparece uma  mensagem com confirmação ou cancel o texto*/
-        window.prompt("hello world")/* coleta os dados digitados*/
-
+        var retorno = Number.parseInt(window.prompt("hello world"))/* coleta os dados digitados e transforma em inteiro para converter para float  use parse Float  ou para o js escolher coloque apenas Number()*/
+        //retorno.toString() ouu String(n)
+        var formatado = `Java script`// deve ser feita com crase `para funcionar
+        window.alert('Estou aprendendo ${formatado}')
+        document.writeln("Escreve linhas diretamente no html <br> aceita tags <br>")
     </script>
 </body>
 </html>
+let nome = "Maria";
+let idade = 30;
+let mensagem = `Olá, ${nome}. Você tem ${idade} anos.`;
+console.log(mensagem);
