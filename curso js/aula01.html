@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula 01 js</title>
+    <style>
+        div.ex06{
+            font: normal 20pt Arial;
+            background-color: green;
+            color: white;
+            width:  220px;
+            height: 220px;
+            line-height: 220px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <p>Hello World</p>
     <div id="tst">
         sdvsdv
+    </div>
+    <div class="ex06">
+        <p>eventos dom</p>
     </div>
     <script>
         var variavel1 = null
@@ -33,7 +47,10 @@
         document.write(p1.innerText +'<br>')// escrevendo o texto da variavel p1 concatenado com a tag br para quebra de linha com inner html peaga a formatação incluindo as tags filhas
         p1.style.background = 'grey'
         var test = document.querySelector('div#tst')//id = # class = . pega o elemento
-        test.style.background = 'red'
+        test.style.background = 'red'   
+
+
+
     </script>
 </body>
 </html>
